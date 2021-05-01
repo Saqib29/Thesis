@@ -15,8 +15,6 @@
 │
 ├───main_operation
 │      .gitignore
-│      data.xlsx
-│      data2.xlsx
 │      file1.py
 │      file2.py
 │   
