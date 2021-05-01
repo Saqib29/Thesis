@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+Suggetions
+{% endblock %}
+
+
+{% block content %}
+
+<h1 class="mb-4">The Suggetions we found for you</h1>
+
+<div class="alert alert-primary p-4 m-4">
+    <h5 class="m-3">
+        {{ suggesion }}
+    </h5>
+    <div class="p-2"></div>
+    {% if other_suggetions %}
+        <span>Other suggetions we can provide you : </span>
+        {% for sugget in other_suggetions %}
+            <strong>{{ sugget[0] }}</strong>,
+        {% endfor %}
+    {% endif %}
+</div>
+
+{% endblock %}
