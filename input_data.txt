@@ -1,5 +1,0 @@
-good resilt - 2100, wheat, 5.5, well-drained-sandy-loamy, 17, oct
-
-alternative result - 2100, wheat, 5.9, loamy, 21, dec
-
-bad result - 2100, wheat, 6.5, slits, 11, oct
