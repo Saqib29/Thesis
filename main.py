@@ -38,13 +38,32 @@ def getSuggetions():
     try:
         selected_crop = data[0][0]
         other_suggetions = data
-        for crop in data:
-            if data2[0] in crop:
-                selected_crop = data2[0]
+        
+        if data2 != None:
+            selected_crop = data2[0]
+
+            for crop in data:
+                if crop[0] == data2[0]:
+                    selected_crop = data2[0]
+                
     except:
         selected_crop = None
         if data2 != None:
-            selected_crop = data2
+            selected_crop = data2[0]
+
+
+    # return "Ok" 
+    # try:
+    #     selected_crop = data[0][0]
+    #     other_suggetions = data
+    #     for crop in data:
+    #         if data2[0] == crop[0]:
+    #             print(data2[0], crop)
+    #             selected_crop = data2[0]
+    # except:
+    #     selected_crop = None
+    #     if data2 != None:
+    #         selected_crop = data2
 
     if selected_crop == None:
         result = "Sorry we don't have best crop suggetion for you now. but you can still cultivate the prevois crop {}".format(
