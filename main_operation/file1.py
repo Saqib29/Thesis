@@ -44,8 +44,6 @@ def alternative_crops(area, prev_crop):
     total_production_cost = area * data_dict[prev_crop][2]
     prev_crop_gross_margin = round(gross_return - total_production_cost, 2)
 
-    # inputed crops gross margin
-    # print(prev_crop, prev_crop_gross_margin)
 
     # measuring alternative crops
     expected_net_margin = []
@@ -56,8 +54,6 @@ def alternative_crops(area, prev_crop):
             expected_net_margin.append((i[0], ENMcc))
 
     alternative_crops = sorted(expected_net_margin, reverse=True, key=ENMc)
-    # print(alternative_crops)
-    # print(expected_net_margin)
 
     return alternative_crops
 
